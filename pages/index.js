@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
+import { Hero, Ab, Sevs, News } from "../components";
 
 export default function Home() {
   return (
@@ -12,7 +13,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="main"></main>
+      <main className="main">
+        <Hero />
+        <Ab />
+        <Sevs />
+        <News />
+      </main>
     </div>
   );
 }
